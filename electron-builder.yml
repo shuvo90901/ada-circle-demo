@@ -1,0 +1,10 @@
+appId: com.example.yourapp
+productName: YourApp
+directories:
+  output: dist
+win:
+  target: nsis
+mac:
+  target: dmg
+linux:
+  target: AppImage

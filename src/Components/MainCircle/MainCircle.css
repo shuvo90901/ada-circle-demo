@@ -1,0 +1,19 @@
+
+.main-circle {
+    border: 3px solid #666666;
+    width: 435px;
+    height: 435px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+  }
+  
+  .second-circle {
+    border: 3px solid #666666;
+    border-radius: 50%;
+    width: 425px;
+    height: 425px;
+  }
+  
+  

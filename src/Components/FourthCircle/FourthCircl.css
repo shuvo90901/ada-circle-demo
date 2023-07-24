@@ -1,0 +1,156 @@
+
+.fourth-circle {
+    width: 240px;
+    height: 240px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 259px;
+    left: 56px;
+  }
+  
+  #circle,
+  #circle .segment {
+    border-color: transparent;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 5px;
+    box-sizing: border-box;
+    height: 120px;
+    position: relative;
+    width: 120px;
+  }
+  
+  #circle .segment {
+    -webkit-clip-path: inset(0 40px 50px 40px);
+    left: -5px;
+    position: absolute;
+    top: -5px;
+  }
+  
+  #circle .segment:nth-child(1) {
+    border-color: gray;
+    transform: rotate(160deg);
+  }
+  
+  #circle .segment:nth-child(2) {
+    border-color: gray;
+    transform: rotate(280deg);
+  }
+  
+  #circle .segment:nth-child(3) {
+    border-color: gray;
+    transform: rotate(50deg);
+  }
+  
+  .cross-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    border: 1px solid #ffffff;
+  }
+  
+  
+  
+  .bottomLine {
+    position: relative;
+    animation-name: bottomLine;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+  
+  }
+  
+  @keyframes bottomLine {
+    0% {
+      transform: rotate(160deg);
+    }
+  
+    25% {
+      transform: rotate(140deg);
+    }
+  
+    50% {
+      transform: rotate(120deg);
+    }
+  
+    100% {
+      transform: rotate(89deg);
+    }
+  }
+  
+  .rightLine {
+    position: relative;
+    animation-name: rightLine;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+  
+  }
+  
+  @keyframes rightLine {
+    0% {
+      transform: rotate(50deg);
+    }
+  
+    25% {
+      transform: rotate(30deg);
+    }
+  
+    50% {
+      transform: rotate(10deg);
+    }
+  
+    75% {
+      transform: rotate(-20deg);
+    }
+  
+    100% {
+      transform: rotate(-41deg);
+    }
+  }
+  
+  .leftLine {
+    position: relative;
+    animation-name: leftLine;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+  
+  }
+  
+  @keyframes leftLine {
+    0% {
+      transform: rotate(280deg);
+    }
+  
+    25% {
+      transform: rotate(260deg);
+    }
+  
+    50% {
+      transform: rotate(240deg);
+    }
+  
+    75% {
+      transform: rotate(220deg);
+    }
+  
+    100% {
+      transform: rotate(200deg);
+    }
+  }
+  
+  
+  
